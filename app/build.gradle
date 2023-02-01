@@ -1,0 +1,23 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'com.mikepenz.aboutlibraries.plugin'
+}
+
+android {
+    namespace 'com.github.ilikeyourhat.aboutlibrariestestapp'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.github.ilikeyourhat.aboutlibrariestestapp"
+        minSdk 26
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+    }
+}
+
+dependencies {
+    debugImplementation project(":library")
+    implementation 'androidx.appcompat:appcompat:1.6.0'
+}
